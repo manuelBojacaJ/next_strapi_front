@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "attributes": {
+        "name": "England's IPL Players Likely To Miss Test Series Against New Zealand",
+        "slug": "england-s-ipl-players-likely-to-miss-test-series-against-new-zealand",
+        "date": "2021-06-01T05:00:00.000Z",
+        "time": "22:00",
+        "detail": "England are likely to rest their Indian Premier League (IPL) 2021 players for the Test series against New Zealand in order to give the cricketers a break. New Zealand will play England in a two-match Test series which gets underway from June 2 at Lord's in London. According to a report in BBC, England players who featured in IPL 2021 before the tournament was postponed will not be hurriedly picked for the Test series. Chris Woakes, Sam Curran, Moeen Ali, Jos Buttler, and Jonny Bairstow all played at least a game in the postponed IPL and are now in mandatory 10-day isolation after returning to the UK.",
+        "createdAt": "2022-09-06T15:32:35.662Z",
+        "updatedAt": "2022-09-06T16:05:51.731Z",
+        "publishedAt": "2022-09-06T15:34:17.935Z",
+        "image": {
+          "data": [
+            {
+              "id": 8,
+              "attributes": {
+                "name": "news1.JPG",
+                "alternativeText": "news1.JPG",
+                "caption": "news1.JPG",
+                "width": 786,
+                "height": 588,
+                "formats": {
+                  "small": {
+                    "name": "small_news1.JPG",
+                    "hash": "small_news1_b0be7d89e4",
+                    "ext": ".JPG",
+                    "mime": "image/jpeg",
+                    "path": null,
+                    "width": 500,
+                    "height": 374,
+                    "size": 33.57,
+                    "url": "https://res.cloudinary.com/next-str4p1/image/upload/v1662480344/small_news1_b0be7d89e4.jpg",
+                    "provider_metadata": {
+                      "public_id": "small_news1_b0be7d89e4",
+                      "resource_type": "image"
+                    }
+                  },
+                  "thumbnail": {
+                    "name": "thumbnail_news1.JPG",
+                    "hash": "thumbnail_news1_b0be7d89e4",
+                    "ext": ".JPG",
+                    "mime": "image/jpeg",
+                    "path": null,
+                    "width": 209,
+                    "height": 156,
+                    "size": 9.34,
+                    "url": "https://res.cloudinary.com/next-str4p1/image/upload/v1662480344/thumbnail_news1_b0be7d89e4.jpg",
+                    "provider_metadata": {
+                      "public_id": "thumbnail_news1_b0be7d89e4",
+                      "resource_type": "image"
+                    }
+                  },
+                  "medium": {
+                    "name": "medium_news1.JPG",
+                    "hash": "medium_news1_b0be7d89e4",
+                    "ext": ".JPG",
+                    "mime": "image/jpeg",
+                    "path": null,
+                    "width": 750,
+                    "height": 561,
+                    "size": 57.98,
+                    "url": "https://res.cloudinary.com/next-str4p1/image/upload/v1662480344/medium_news1_b0be7d89e4.jpg",
+                    "provider_metadata": {
+                      "public_id": "medium_news1_b0be7d89e4",
+                      "resource_type": "image"
+                    }
+                  }
+                },
+                "hash": "news1_b0be7d89e4",
+                "ext": ".JPG",
+                "mime": "image/jpeg",
+                "size": 61.47,
+                "url": "https://res.cloudinary.com/next-str4p1/image/upload/v1662480344/news1_b0be7d89e4.jpg",
+                "previewUrl": null,
+                "provider": "cloudinary",
+                "provider_metadata": {
+                  "public_id": "news1_b0be7d89e4",
+                  "resource_type": "image"
+                },
+                "createdAt": "2022-09-06T16:05:45.461Z",
+                "updatedAt": "2022-09-06T16:05:45.461Z"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 1 }
+  }
+}
