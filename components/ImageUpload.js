@@ -25,7 +25,6 @@ export default function ImageUpload({ sportNewsId, imageUploaded }) {
 
   const handlefileChange = (e) => {
     e.preventDefault();
-    console.log("Target: ", e.target.files);
     setImage(e.target.files[0]);
   };
   return (

@@ -4,7 +4,6 @@ import styles from "@/styles/NewsItem.module.css";
 import moment from "moment";
 
 export default function NewsItem({ news }) {
-  console.log("News", news);
   return (
     <div className={styles.news}>
       <div className={styles.img}>

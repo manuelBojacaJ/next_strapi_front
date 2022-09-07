@@ -6,8 +6,6 @@ import { API_URL } from "@/config/index";
 import NewsItem from "@/components/NewsItem";
 
 export default function HomePage({ news }) {
-  console.log("News0===>", news);
-
   return (
     <div>
       <Layout>
@@ -39,9 +37,9 @@ export async function getStaticProps() {
   const res = await fetch(
     `${API_URL}/api/sports?populate=*&sort=date%3Aasc&pagination[limit]=5`
   );
-  console.log("Res", res);
+
   const news = await res.json();
-  console.log("News===>", news.data);
+
   return {
     props: { news: news.data },
     revalidate: 1,

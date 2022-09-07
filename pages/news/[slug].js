@@ -9,8 +9,6 @@ import { toast, ToastContainer } from "react-toastify";
 
 export default function SingleNews({ news, id }) {
   const router = useRouter();
-  console.log("router===>", router);
-  console.log("news===>", news);
 
   const deleteNews = async (e) => {
     if (window.confirm("are you sure that wanted to delete news?")) {
@@ -50,7 +48,7 @@ export default function SingleNews({ news, id }) {
             <Image
               src={
                 news.image.data
-                  ? news.image.data[0].attributes.formats.medium.url
+                  ? news.image.data.attributes.formats.medium.url
                   : "/images/hero.jpg"
               }
               width={900}
@@ -81,12 +79,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  console.log("Slug: ", slug);
   const res = await fetch(
     `${API_URL}/api/sports?populate=*&filters[slug][$eq]=${slug}`
   );
   const singleNews = await res.json();
-  console.log("singleNews: ", singleNews);
+
   return {
     props: {
       news: singleNews.data[0].attributes,

@@ -5,7 +5,6 @@ import NewsItem from "@/components/NewsItem";
 import styles from "@/styles/News.module.css";
 
 export default function News({ news }) {
-  console.log("Naes: ", news);
   return (
     <div>
       <Layout>
@@ -34,7 +33,7 @@ export default function News({ news }) {
 export async function getStaticProps() {
   const res = await fetch(`${API_URL}/api/sports?populate=*&sort=date%3Aasc`);
   const news = await res.json();
-  console.log("NewS: ", news);
+
   return {
     props: { news: news.data },
     revalidate: 1,

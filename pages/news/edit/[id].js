@@ -11,7 +11,6 @@ import Image from "next/image";
 import ImageUpload from "@/components/ImageUpload";
 
 export default function EditNews(sportNews, id) {
-  console.log("ID2: ", id, "SportNews: ", sportNews);
   const [values, setValues] = useState({
     name: sportNews.name,
     detail: sportNews.detail,
@@ -21,7 +20,7 @@ export default function EditNews(sportNews, id) {
 
   const [imagePreview, setImagePreview] = useState(
     sportNews.sportNews.data.attributes.image.data
-      ? sportNews.sportNews.data.attributes.image.data[0].attributes.formats
+      ? sportNews.sportNews.data.attributes.image.data.attributes.formats
           .thumbnail.url
       : null
   );
@@ -59,7 +58,7 @@ export default function EditNews(sportNews, id) {
   const imageUploaded = async (e) => {
     const res = await fetch(`${API_URL}/api/sports/${sportNews.id}?populate=*`);
     const data = await res.json();
-    console.log("Data===>: ", data);
+
     setImagePreview(
       data.data.attributes.image.data[0].attributes.formats.thumbnail.url
     );
@@ -144,10 +143,9 @@ export default function EditNews(sportNews, id) {
 }
 
 export async function getServerSideProps({ params: { id } }) {
-  console.log("ID: ", id);
   const res = await fetch(`${API_URL}/api/sports/${id}?populate=*`);
   const sportNews = await res.json();
-  console.log("SportN: ", sportNews);
+
   return {
     props: {
       sportNews,

@@ -35,13 +35,11 @@ export default function AddNews() {
       body: JSON.stringify({ data: values }),
     });
 
-    console.log("Sport2====>", response);
-
     if (!response.ok) {
       toast.error("Something went wrong");
     } else {
       const sport = await response.json();
-      console.log("Sport====>", sport);
+
       router.push(`/news/${sport.data.attributes.slug}`);
     }
   };
